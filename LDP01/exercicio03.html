@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Alexandre">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhorar o Código</title>
+    <style>
+        body{background: grey;}
+    </style>
+</head>
+    <body>
+        <h1>Melhorando o Código</h1>    
+    </body>
+    <script>
+        var n1 = prompt("Digite um número: ");
+            n1 = parseInt(n1);
+        var n2 = prompt("Digite outro número: ");
+            n2 = parseInt(n2);
+        if(n1===n2){
+            alert("EMPATE");
+        }else{
+            var sorteio = parseInt(math.random() * 2); 
+            alert("sorteio: " + sorteio);      
+
+            if((sorteio===0 && n1<n2 || sorteio===1 && n1>n2)){
+                alert("n1 ganhou!!!");
+            }else{
+                alert("n2 ganhou!!!");
+            }
+        }    
+    </script>
+</html>
