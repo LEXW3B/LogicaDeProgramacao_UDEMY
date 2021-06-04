@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Alexandre">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <style>
+        body{background: grey;font-weight: bolder;font-size: 22px;}
+    </style>
+</head>
+    <body>
+        <h1>Lógica de Programação JS</h1> 
+        
+        <div id="output"></div>
+    </body>
+    <script>
+        var produtos = new Array('caneta', 'lapis', 'tesoura', 'borracha', 'caderno', 'livro');
+
+        produtos.push('compasso', 'cartolina')
+
+        var output = document.querySelector('#output')
+
+        var msg = '';
+
+        for(var i = 0; i < produtos.length; i++){
+            msg += 'Produto ' + ( i + 1 ) + ': ' + produtos[i] +'<br>';
+        }
+        output.innerHTML = msg;
+    </script>
+
+</html>
