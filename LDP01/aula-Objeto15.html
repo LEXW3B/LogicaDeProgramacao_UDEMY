@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexandre">
+    <title>Document</title>
+    <style>
+        body{background: grey;font-weight: bolder;font-size: 22px;}
+    </style>
+</head>
+    <body>
+        <h1>Lógica de Programação JS</h1>
+        <div id="output"></div>
+    </body>
+    <script>
+        var produto1 = new Object();//variavel nome da variavel recebe novo objeto
+        produto1.nome = "caneta";//nome da variavel ponto nome recebe estring
+        produto1.preco = 2.2;//nome da variavel ponto nome recebe float
+        produto1.estoque = 10;//nome da variavel ponto nome recebe estring
+
+        produto1.comprar = function(qtd){
+            if(!qtd){
+                qtd = 1;
+            }
+        }
+
+        console.log('comprou cneta');
+
+        this.estoque = this.estoque - qtd;
+        console.log(this.estoque);
+
+        var msg = '';
+
+        msg += 'nome: ' + produto1.nome + '<br>';
+        msg += 'preco: ' + produto1.preco + '<br>';
+        msg += 'estoque: ' + produto1.estoque + '<br>';
+
+        document.querySelector('#output').innerHTML = msg;
+
+    </script>
+</html>
