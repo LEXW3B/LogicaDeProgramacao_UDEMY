@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexandre">
+    <title>Array</title>
+    <style>
+        body{background: grey;font-weight: bolder;font-size: 22px;}
+    </style>
+</head>
+    <body>
+        <h1>Lógica de Programação JS</h1>
+        <div id="output"></div>    
+    </body>
+    <script>
+        var produto = [
+        {"nome": "caneta",   "preco": " 2.00"},
+        {"nome": "lapis",    "preco": " 1.20"},
+        {"nome": "borracha", "preco": " 0.50"}
+        ];
+
+        var msg = "";
+
+        for( var i = 0; i < produto.length; i++){
+            console.log(produto[i]);
+
+            msg += "<h2>Produto:" + (produto[i].nome) + "</h2>";
+            msg += "<p>Preco: R$" + (produto[i].preco) + "</p>"
+        }
+
+        document.querySelector('#output').innerHTML = msg;
+    </script>
+</html>
