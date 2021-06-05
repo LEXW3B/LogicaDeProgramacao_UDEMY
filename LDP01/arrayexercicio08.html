@@ -1,30 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Alexandre">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Alexandre">
-    <title>Array</title>
+    <title>Document</title>
     <style>
         body{background: grey;font-weight: bolder;font-size: 22px;}
     </style>
 </head>
     <body>
-        <h1>Lógica d Programação JS</h1>
-        <div id="output"></div>    
-    </body
+        <h1>Lógica de Programação JS</h1>
+
+        <div id="output"></div>
+        
+    </body>
     <script>
         var cadastro = [
-        { "Nome": "daniel", "Email": "daniel@gmail.com" }, 
-        { "nome": "vania" , "Email": "vania@ig.com" }, 
-        { "Nome": "ale"   , "Email": "ale@hotmail.com" }, 
-        { "Nome": "alex"  , "Email": "alex@outlook.com" }
-        ]
-        
-        msg = "";
+            { "Nome": "daniel", "Email": "daniel@gmail.com" }, 
+            { "Nome": "vania" , "Email": "vania@ig.com" }, 
+            { "Nome": "ale"   , "Email": "ale@hotmail.com" }, 
+            { "Nome": "alex"  , "Email": "alex@outlook.com" },
+            { "Nome": "ze"    , "Email": "ze.arruela@seila.com" }
+            ]
+            
+            msg = "";
 
+            for(var i = 0; i < cadastro.length; i++){
+                console.log(cadastro[i]);
 
-        document.querySelector('#output').innerHTML = msg;
+                msg += '<h2>Nome: ' + cadastro[i].Nome + '</h2>';
+                msg += '<p>Email: ' + cadastro[i].Email + '</P>'; 
+            }       
+
+            document.querySelector('#output').innerHTML = msg;
     </script>
 </html>
